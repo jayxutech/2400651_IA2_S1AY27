@@ -1,0 +1,16 @@
+{
+  "checks": [
+    "Direct ticket access without data redirects to index.html",
+    "desktop: landing and form fit viewport without horizontal overflow",
+    "tablet: landing and form fit viewport without horizontal overflow",
+    "mobile: landing and form fit viewport without horizontal overflow",
+    "small-mobile: landing and form fit viewport without horizontal overflow",
+    "Empty submission displays all four contextual errors",
+    "Whitespace name, malformed email and missing @ rejected",
+    "Wrong file type, 500 KB boundary, and corrupt image rejected",
+    "Valid photo previews and can be removed/replaced; valid submission renders avatar, name, email, GitHub and serial; refresh retains ticket",
+    "Corrupt stored state redirects to landing page",
+    "Keyboard focus styles, labels and error associations are present; no JavaScript runtime errors"
+  ],
+  "runtimeErrors": []
+}
