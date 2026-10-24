@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Join Coding Conf on October 26, 2026 in Papine, Kgn.">
+  <title>Registration | Coding Conf 2026</title>
+  <link rel="icon" href="../assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/validation.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Coding Conf home"><img src="../assets/images/logo-full.svg" alt="Coding Conf" width="210" height="30"></a>
+    <nav aria-label="Main navigation"><a href="index.html">Event</a><a href="login.html">Register</a></nav>
+  </header>
+  <main id="main">
+    <section class="page-heading" aria-labelledby="form-title">
+      <h1 id="form-title">Your Journey to Coding Conf<br>2026 Starts Here!</h1>
+      <p class="intro">Secure your spot at this year's coding conference.</p>
+    </section>
+    <form id="registration-form" class="registration" novalidate>
+      <div class="field">
+        <label for="avatar">Upload Avatar</label>
+        <div id="drop-zone" class="drop-zone">
+          <input id="avatar" name="avatar" type="file" accept="image/jpeg,image/png" aria-describedby="avatar-help avatar-error" required>
+          <img id="avatar-preview" src="../assets/images/icon-upload.svg" alt="" class="upload-preview">
+          <span id="upload-prompt">Drag and drop or click to upload</span>
+        </div>
+        <div id="image-actions" class="image-actions" hidden><button id="remove-image" type="button">Remove image</button><button id="change-image" type="button">Change image</button></div>
+        <p id="avatar-help" class="hint"><img src="../assets/images/icon-info.svg" alt="" width="12" height="12"> Upload your photo (JPG or PNG, under 500 KB).</p>
+        <p id="avatar-error" class="error" aria-live="polite"></p>
+      </div>
+      <div class="field"><label for="full-name">Full Name</label><input id="full-name" name="fullName" type="text" autocomplete="name" maxlength="80" aria-describedby="name-error" required><p id="name-error" class="error" aria-live="polite"></p></div>
+      <div class="field"><label for="email">Email Address</label><input id="email" name="email" type="email" autocomplete="email" placeholder="example@email.com" maxlength="254" aria-describedby="email-error" required><p id="email-error" class="error" aria-live="polite"></p></div>
+      <div class="field"><label for="github">GitHub Username</label><input id="github" name="github" type="text" autocomplete="off" placeholder="@yourusername" maxlength="40" spellcheck="false" aria-describedby="github-error" required><p id="github-error" class="error" aria-live="polite"></p></div>
+      <p id="form-error" class="error" role="alert"></p>
+      <button class="button" id="submit-button" type="submit">Generate My Ticket</button>
+      <p class="privacy">Your details stay in this browser tab. This demo does not send an email.</p>
+    </form>
+  </main>
+  <footer class="site-footer"><p>Coding Conf 2026 &bull; October 26 &bull; Papine, Kgn</p><p>A fictitious conference for CIT2011.</p></footer>
+</body>
+</html>
